@@ -2,11 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-  --darkmatter: #34495e;
-  --darkermatter: #2c3e50;
-  --greenapple: #2ecc71;
-  --greyapple: #ecf0f1;
-
   --uhcBlue: #07294d;
   --uhcGreenTone: #bac5b9;
   --uhcLightBlue: #6cace4;
@@ -26,68 +21,7 @@ body {
   font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Hero Card */
-
-.heroCard {
-  height: 250px;
-  /* background-color: var(--uhcLightBlue); */
-  padding-left: 10%;
-  padding-right: 10%;
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  align-content: center;
-  justify-content: center;
-  grid-gap: 10px;
-}
-
-.heroTextItem {
-  /* background-color: burlywood; */
-  padding: 10px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-.heroTextItem .title {
-  padding-left: 5px;
-  padding-bottom: 12px;
-  align-self: end;
-  color: var(--uhcBlue);
-}
-.heroTextItem .text {
-  font-size: 20px;
-  font-weight: 0;
-  align-self: start;
-  color: var(--uhcBlue);
-}
-
-.heroImgItem {
-  /* background-color: coral; */
-  justify-self: center;
-  align-self: center;
-
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
-}
-
-.heroImg {
-  /* box-shadow: 0 5px 10px #888888; */
-  /* border-radius: 50%; */
-  height: 150px;
-  border-style: solid;
-  border-color: white;
-}
-
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 10px);
-  }
-  100% {
-    transform: translate(0, -0px);
-  }
+.half {
+  width: 60%;
+  margin: 0 auto;
 }

@@ -136,6 +136,13 @@
   padding: 15px;
   height: 80%;
   grid-area: img;
+  transition: 1s;
+}
+
+.toolGallery img:hover {
+  /* transform: scale(3);
+  background-color: var(--uhcGray);
+  border: black solid 1px; */
 }
 .toolGallery .title {
   font-size: 15px;

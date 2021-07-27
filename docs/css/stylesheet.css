@@ -3,6 +3,7 @@
 
 :root {
   --uhcBlue: #07294d;
+  --uhcBrightBlue: #006298;
   --uhcGreenTone: #bac5b9;
   --uhcLightBlue: #6cace4;
   --uhcYellow: #ffc600;
@@ -25,4 +26,7 @@ body {
 .half {
   width: 60%;
   margin: 0 auto;
+}
+
+.nakedLink {
 }

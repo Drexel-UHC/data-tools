@@ -1,0 +1,54 @@
+.pagesApplicationContainer {
+  padding: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.pagesApplicationContainer .title {
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--uhcBlue);
+}
+
+.embedContainer {
+  padding-top: 40px;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: start;
+}
+
+.tableauIframe {
+  display: 'none';
+  width: 100%;
+  height: 100%;
+}
+
+.pagesButton {
+  border: none;
+  width: 100%;
+  background-color: white;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  border-bottom: rgb(167, 167, 167) solid 1px;
+}
+
+.chevronUHC {
+  color: var(--uhcBrightBlue);
+  background-color: var(--uhcYellow);
+  padding: 3px 10px;
+  margin-right: 20px;
+}
+.pagesButton .text {
+  /* background-color: burlywood; */
+  text-align: left;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: var(--uhcBrightBlue);
+  font-weight: 900;
+}

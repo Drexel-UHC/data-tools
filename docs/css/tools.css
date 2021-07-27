@@ -110,16 +110,18 @@
 .toolGallery {
   padding: 50px;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 20px;
 }
 
+/* ITEM*/
+
 .toolGalleryItem {
   background-color: var(--uhcGray);
+  /* border: solid rgb(48, 48, 48) 1px; */
   height: 200px;
   padding: 10px;
-
   display: grid;
-
   grid-gap: 5px;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 50px 150px;
@@ -130,22 +132,37 @@
 
 .toolGallery img {
   padding: 15px;
-  height: 180px;
+  height: 80%;
   grid-area: img;
 }
 .toolGallery .title {
-  font-size: 30px;
+  font-size: 15px;
   grid-area: title;
 }
 .toolGallery .desc {
-  font-size: 15px;
+  font-size: 12px;
   grid-area: desc;
 }
-
+/* OUTPUT */
 .toolGallery .toolGalleryOutputs {
+  grid-area: output;
+
+  /* background-color: wheat; */
   display: grid;
-  justify-items: end;
+  grid-gap: 5px;
+  grid-row: repeat(5, 30px);
+  justify-content: end;
+  align-content: start;
 }
 
 .toolGallery .toolGalleryOutputs .outputsItem {
+  /* background-color: violet; */
+  font-size: 11px;
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-bottom-color: var(--uhcOrange);
+  padding-bottom: 2px;
+  text-align: end;
+  text-transform: uppercase;
+  color: var(--uhcOrange);
 }

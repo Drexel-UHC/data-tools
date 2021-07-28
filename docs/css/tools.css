@@ -131,18 +131,18 @@
     'title'
     'desc'
     'output';
+  transition: 0.2s;
 }
 
 .toolGalleryItem img {
   height: 200px;
   grid-area: img;
-  transition: 1s;
 }
 
-.toolGalleryItem img:hover {
-  /* transform: scale(3);
-  background-color: var(--uhcGray);
-  border: black solid 1px; */
+.toolGalleryItem:hover {
+  /* border: var(--uhcLightBlue) solid 1px; */
+  transform: translate(0, -15px);
+  box-shadow: 1px 1px 3px var(--uhcLightBlue);
 }
 
 .toolGalleryItem .title {
@@ -156,7 +156,7 @@
 .toolGalleryItem .desc {
   padding-left: 6%;
   padding-right: 6%;
-  font-size: 12px;
+  font-size: 13px;
   grid-area: desc;
 }
 /* OUTPUT */
@@ -177,8 +177,8 @@
 }
 
 .toolGalleryItem .toolGalleryOutputs .outputsItem {
-  font-size: 11px;
-  height: 16px;
+  font-size: 13px;
+  height: 20px;
   text-decoration: none;
   border-bottom-style: solid;
   border-bottom-color: var(--uhcOrange);

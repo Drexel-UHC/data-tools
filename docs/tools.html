@@ -66,23 +66,27 @@
     <hr class="half" />
 
     <!-- Filter -->
-    <div class="filterTechTitle">Filter by Technology</div>
-    <div class="filterTech">
-      <button class="techItem">ArcGIS</button>
-      <button class="techItem">Tableau</button>
-      <button class="techItem">Shiny</button>
-      <button class="techItem">Rmarkdown</button>
-      <button class="techItem">Javascript</button>
+    <div class="filterContainer">
+      <div class="techItem active" data-name="all">All Tools</div>
+      <div class="filterTechTitle">Technology Type</div>
+      <div class="filterTech">
+        <div class="techItem" data-name="arcgis">ArcGIS</div>
+        <div class="techItem" data-name="tableau">Tableau</div>
+        <div class="techItem" data-name="shiny">Shiny</div>
+        <div class="techItem" data-name="rmarkdown">Rmarkdown</div>
+        <div class="techItem" data-name="javascript">Javascript</div>
+      </div>
+      <div class="filterCatTitle">Category</div>
+      <div class="filterCat">
+        <div class="techItem" data-name="public">Public</div>
+        <div class="techItem" data-name="manuscript">Manuscript Supp.</div>
+        <div class="techItem" data-name="internalTools">Internal Tools</div>
+      </div>
     </div>
-    <div class="filterTechTitle">Filter by Category</div>
-    <div class="filterTech">
-      <button class="techItem">COVID-19</button>
-      <button class="techItem">Manuscript Supplement</button>
-      <button class="techItem">Internal Tools</button>
-    </div>
+
     <!-- Gallery -->
     <div class="toolGallery">
-      <div class="toolGalleryItem">
+      <div class="toolGalleryItem" data-name="public shiny">
         <div class="title">COVID-19 Health Inequities in Cities</div>
         <div class="desc">
           Compare, and track inequities along three dimensions (1) across
@@ -112,7 +116,7 @@
           <a class="outputsItem">Publication</a>
         </div>
       </div>
-      <div class="toolGalleryItem">
+      <div class="toolGalleryItem" data-name="arcgis">
         <div class="title">Bikeability in Philadelphia</div>
         <div class="desc">
           This index will support research/evaluations related to bicycle use in
@@ -129,7 +133,7 @@
           >
         </div>
       </div>
-      <div class="toolGalleryItem">
+      <div class="toolGalleryItem" data-name="tableau">
         <div class="title">
           COVID-19 Vulnerability Indicators in Philadelphia
         </div>
@@ -196,6 +200,7 @@
     </div>
 
     <!-- JS -->
-    <script src="customJS.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/tools.js"></script>
   </body>
 </html>

@@ -1,18 +1,23 @@
 // Get button elements
 const toggleButtons = document.querySelectorAll('.pagesButton');
 
-
+ 
 
 // Handle Embedd Button Function
 function handleEmbedButton(event) {
   // Get HTML Elements
-  const button = event.currentTarget;
-  const icon = button.firstElementChild
-  const embededElement = button.parentElement.lastElementChild;
+  let button = event.currentTarget;
+  let icon = button.firstElementChild;
+  let embededElement = button.parentElement.lastElementChild;
+    console.log('CLICKED');
+  console.log(embededElement.style.display);
+
   // Toggle Embedded Display
   embededElement.style.display =
-    embededElement.style.display === 'none' ? '' : 'none';
+    embededElement.style.display === 'none' ? 'block' : 'none';
+  
   console.log(embededElement.style.display);
+  console.log(embededElement );
   // Change the icon
   if (embededElement.style.display === 'none') {
     icon.classList.remove('fa-chevron-down');

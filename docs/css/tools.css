@@ -112,7 +112,7 @@
   padding-left: 8%;
   padding-right: 8%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
 }
 
@@ -121,57 +121,77 @@
 .toolGalleryItem {
   background-color: var(--uhcGray);
   /* border: solid rgb(48, 48, 48) 1px; */
-  height: 200px;
   padding: 10px;
   display: grid;
-  grid-gap: 5px;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 50px 150px;
+  grid-gap: 10px;
+  grid-template-rows: 200px auto auto auto;
+  justify-items: center;
   grid-template-areas:
-    'img  title   title'
-    'img  desc    output';
+    'img'
+    'title'
+    'desc'
+    'output';
 }
 
-.toolGallery img {
-  padding: 15px;
-  height: 80%;
+.toolGalleryItem img {
+  height: 200px;
   grid-area: img;
   transition: 1s;
 }
 
-.toolGallery img:hover {
+.toolGalleryItem img:hover {
   /* transform: scale(3);
   background-color: var(--uhcGray);
   border: black solid 1px; */
 }
-.toolGallery .title {
-  font-size: 15px;
+
+.toolGalleryItem .title {
+  /* background-color: aqua; */
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--uhcBlue);
   grid-area: title;
 }
-.toolGallery .desc {
+.toolGalleryItem .desc {
+  padding-left: 6%;
+  padding-right: 6%;
   font-size: 12px;
   grid-area: desc;
 }
 /* OUTPUT */
-.toolGallery .toolGalleryOutputs {
+.toolGalleryItem .toolGalleryOutputs {
   grid-area: output;
 
   /* background-color: wheat; */
-  display: grid;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  /* display: grid;
   grid-gap: 5px;
-  grid-row: repeat(5, 30px);
-  justify-content: end;
-  align-content: start;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+
+  /* grid-row: repeat(5, 30px); */
 }
 
-.toolGallery .toolGalleryOutputs .outputsItem {
-  /* background-color: violet; */
+.toolGalleryItem .toolGalleryOutputs .outputsItem {
   font-size: 11px;
+  height: 16px;
   text-decoration: none;
   border-bottom-style: solid;
   border-bottom-color: var(--uhcOrange);
-  padding-bottom: 2px;
-  text-align: end;
+  margin: 5px;
+
+  /* text-align: end; */
   text-transform: uppercase;
   color: var(--uhcOrange);
+
+  transition: 0.2s;
+}
+
+.toolGalleryItem .toolGalleryOutputs .outputsItem:hover {
+  font-weight: 900;
+  font-size: 13px;
 }

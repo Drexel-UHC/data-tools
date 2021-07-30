@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/stylesheet.css" />
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/gallery.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/tools.css" />
+    <link rel="stylesheet" href="../../css/pages.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <title>UHC Dashboard Gallery</title>
+    <script
+      src="https://kit.fontawesome.com/1b24aa6cfd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar Pages-->
+    <header>
+      <div class="nav">
+        <div class="content">
+          <div class="logo_row">
+            <img class="logo" src="../../img/UHC_logo_loading.png" alt="" />
+            <div class="logo_learn_more">
+              <span class="logo_learn_more_text">Learn more</span>
+              <br />
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="logo_learn_more_link"
+                href="https://drexel.edu/uhc/"
+                >drexel.edu/uhc</a
+              >
+            </div>
+          </div>
+          <div class="links nav-items">
+            <a></a>
+            <a class="pageNotSelected" href="../../index.html">Home</a>
+            <a class="pageNotSelected" href="../../tools.html">Tools</a>
+            <a class="pageNotSelected" href="../../technologies.html"
+              >Technologies</a
+            >
+            <a></a>
+          </div>
+          <i class="material-icons menu" onclick="menu()">☰</i>
+        </div>
+        <div class="dropdown" id="dropdown">
+          <a href="">Home</a>
+          <a href="">Explorables</a>
+          <a href="">Tools</a>
+        </div>
+      </div>
+    </header>
+    <!-- Application Container -->
+    <div class="pagesApplicationContainer">
+      <!-- Intro Text -->
+      <div class="title">Inequities in COVID-19 Outcomes by Race/Ethnicity</div>
+      Rate Ratios and Rate Differences are key metrics of inequity. For an
+      introduction to the metrics used in this panel click here. In this panel
+      we visualize rate ratios and rate difference in various COVID-19 outcomes
+      between combinations of two race/ethnicity groups. You can hover over the
+      dots or lines for additional information. You can choose visualizing (1)
+      inequities between racial/ethnic groups, (2) values of the outcome for
+      each racial/ethnic group.
+
+      <!-- Application Container -->
+      <div class="dashboardContainer">
+        <div class="dashboardInputs">
+          <button>Select Outcomes:</button>
+          <button>Filter by Age-Adjusted:</button>
+          <button>Race/Ethnicity to compare:</button>
+        </div>
+        <!-- Plot -->
+        <div class="dashboardPlotContainer">
+          <div class="dashboardPlotTitle"></div>
+          <div class="dashboardPlotSubtitle"></div>
+          <div class="dashboardPlot" id="plot1"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <br /><br />
+    <hr />
+    <div class="footerContainer">
+      <div class="footerAbout">
+        <h3 class="title">About Drexel UHC</h3>
+        <div class="text">
+          The mission of the Drexel Urban Health Collaborative at the Dornsife
+          School of Public Health is to improve health in cities by increasing
+          scientific knowledge and public awareness of urban health challenges
+          and opportunities, and by identifying and promoting actions and
+          policies that improve population health and reduce health inequities.
+          Through three areas of emphasis, research and data, training, and
+          community and policy engagement, the UHC works to advance knowledge,
+          build capacity, and translate knowledge into community and policy
+          actions to improve urban health in Philadelphia and in cities all over
+          the world.
+        </div>
+      </div>
+      <div class="footerSocials">
+        <img src="../../img/UHC Logo.png" alt="" />
+        <div class="twitter">
+          <a
+            href="https://twitter.com/intent/tweet?DataTools&via=DrexelUHC"
+            target="_blank"
+            style="opacity: 1"
+          >
+            <i class="fab fa-2x fa-twitter"></i>
+          </a>
+        </div>
+        <div class="github">
+          <a
+            href="https://github.com/Drexel-UHC"
+            target="_blank"
+            style="opacity: 1"
+          >
+            <i class="fab fa-2x fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/dumbbell.js"></script>
+    <script src="https://code.highcharts.com/modules/lollipop.js"></script>
+    <script src="plot.js"></script>
+  </body>
+</html>

@@ -10,6 +10,27 @@
     <link rel="stylesheet" href="../../css/tools.css" />
     <link rel="stylesheet" href="../../css/pages.css" />
     <link rel="stylesheet" href="custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/card.min.css"
+      integrity="sha512-u5E5vOHVsB0blcZniDNfaRkTfqdgjxIgLX17YlG0vjQyos7Z7b1BXLuhHZbF2JOVRrfNNd8P6v7fw87JaFw/Rg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.css"
+      integrity="sha512-YYS7fyqDxVE/yJ1280i8KjA+nC7wAtv2u/qkulKbdMpmp8DBWX0Wj+HtILsFyvq+fouCwCyr0hasPAz1eBlvwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/label.min.css"
+      integrity="sha512-bLGTFSFKewLG/ltHL52mMtuviUCuHlohn0410iUawDPbjvAONDt0yZ6vLkXfiFOIS9LxPqknEp2K76gBaMq9Bg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>UHC Dashboard Gallery</title>
     <script
       src="https://kit.fontawesome.com/1b24aa6cfd.js"
@@ -55,30 +76,65 @@
     </header>
     <!-- Application Container -->
     <div class="pagesApplicationContainer">
-      <!-- Intro Text -->
-      <div class="title">Inequities in COVID-19 Outcomes by Race/Ethnicity</div>
-      Rate Ratios and Rate Differences are key metrics of inequity. For an
-      introduction to the metrics used in this panel click here. In this panel
-      we visualize rate ratios and rate difference in various COVID-19 outcomes
-      between combinations of two race/ethnicity groups. You can hover over the
-      dots or lines for additional information. You can choose visualizing (1)
-      inequities between racial/ethnic groups, (2) values of the outcome for
-      each racial/ethnic group.
-
-      <!-- Application Container -->
-      <div class="dashboardContainer">
-        <div class="dashboardInputs">
-          <button>Select Outcomes:</button>
-          <button>Filter by Age-Adjusted:</button>
-          <button>Race/Ethnicity to compare:</button>
+      <div class="ui card" style="width: 100%">
+        <div class="content">
+          <div class="title">
+            Inequities in COVID-19 Outcomes by Race/Ethnicity
+          </div>
+          <br />
+          <div class="meta">
+            Rate Ratios and Rate Differences are key metrics of inequity. For an
+            introduction to the metrics used in this panel click here. In this
+            panel we visualize rate ratios and rate difference in various
+            COVID-19 outcomes between combinations of two race/ethnicity groups.
+            You can hover over the dots or lines for additional information. You
+            can choose visualizing (1) inequities between racial/ethnic groups,
+            (2) values of the outcome for each racial/ethnic group.
+          </div>
         </div>
-        <!-- Plot -->
-        <div class="dashboardPlotContainer">
-          <div class="dashboardPlotTitle"></div>
-          <div class="dashboardPlotSubtitle"></div>
-          <div class="dashboardPlot" id="plot1"></div>
+
+        <div class="content">
+          <div class="dashboardContainer">
+            <div class="dashboardInputs">
+              <div class="dashboardInputItem">
+                <div class="ui sub header">Select Outcome:</div>
+                <select class="ui dropdown" id="inputOutcome">
+                  <option value="Incidence">Incidence</option>
+                  <option value="Mortality">Mortality</option>
+                  <option value="Testing">Testing</option>
+                  <option value="Positivity">Positivity</option>
+                  <option value="Hospitalization">Hospitalization</option>
+                </select>
+              </div>
+              <div class="dashboardInputItem">
+                <div class="ui sub header">Filter by Age-Adjusted:</div>
+                <select class="ui dropdown" id="inputAdj">
+                  <option value="1">Age-Adjusted</option>
+                  <option value="0">Crude</option>
+                </select>
+              </div>
+              <div class="dashboardInputItem">
+                <div class="ui sub header">Race/Ethnicity to compare:</div>
+                <select class="ui dropdown" id="inputRace">
+                  <option value="1">NH Black</option>
+                  <option value="0">Hispanic</option>
+                  <option value="0">NH Asian/PI</option>
+                  <option value="0">NH Native American</option>
+                </select>
+              </div>
+            </div>
+            <!-- Plot -->
+            <div class="dashboardPlotContainer">
+              <div class="dashboardPlotTitle"></div>
+              <div class="dashboardPlotSubtitle"></div>
+              <div class="dashboardPlot" id="plot1"></div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- Intro Text -->
+
+      <!-- Application Container -->
     </div>
 
     <!-- Footer -->
@@ -124,6 +180,7 @@
     </div>
 
     <!-- JS -->
+
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
     <script src="https://code.highcharts.com/modules/dumbbell.js"></script>

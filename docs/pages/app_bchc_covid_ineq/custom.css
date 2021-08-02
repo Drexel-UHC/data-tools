@@ -1,5 +1,21 @@
+.cardIneqOutcomesPop {
+  padding-left: 10%;
+  padding-top: 20px;
+  padding-right: 10%;
+  display: grid;
+  justify-items: center;
+}
+
+.cardIneqOutcomesPop .title {
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--uhcBlue);
+}
+
 .dashboardContainer {
   display: grid;
+  grid-gap: 20px;
 }
 
 /* INPUTS */
@@ -32,4 +48,9 @@
 
 .dashboardPlotSubtitle {
   padding: 15px;
+}
+
+.dashboardPlot {
+  display: grid;
+  height: 500px;
 }

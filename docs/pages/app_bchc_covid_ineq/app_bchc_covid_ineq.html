@@ -75,8 +75,8 @@
       </div>
     </header>
     <!-- Application Container -->
-    <div class="pagesApplicationContainer">
-      <div class="ui card" style="width: 100%">
+    <div class="cardIneqOutcomesPop">
+      <div class="ui card" style="width: 75%">
         <div class="content">
           <div class="title">
             Inequities in COVID-19 Outcomes by Race/Ethnicity
@@ -101,8 +101,8 @@
                 <select class="ui dropdown" id="inputOutcome">
                   <option value="Incidence">Incidence</option>
                   <option value="Mortality">Mortality</option>
-                  <option value="Testing">Testing</option>
-                  <option value="Positivity">Positivity</option>
+                  <!-- <option value="Testing">Testing</option>
+                  <option value="Positivity">Positivity</option> -->
                   <option value="Hospitalization">Hospitalization</option>
                 </select>
               </div>
@@ -110,16 +110,16 @@
                 <div class="ui sub header">Filter by Age-Adjusted:</div>
                 <select class="ui dropdown" id="inputAdj">
                   <option value="1">Age-Adjusted</option>
-                  <option value="0">Crude</option>
+                  <option value="">Crude</option>
                 </select>
               </div>
               <div class="dashboardInputItem">
                 <div class="ui sub header">Race/Ethnicity to compare:</div>
                 <select class="ui dropdown" id="inputRace">
-                  <option value="1">NH Black</option>
-                  <option value="0">Hispanic</option>
-                  <option value="0">NH Asian/PI</option>
-                  <option value="0">NH Native American</option>
+                  <option value="NH Black">NH Black</option>
+                  <option value="Hispanic">Hispanic</option>
+                  <option value="NH Asian/PI">NH Asian/PI</option>
+                  <option value="NH Native American">NH Native American</option>
                 </select>
               </div>
             </div>
@@ -185,6 +185,7 @@
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
     <script src="https://code.highcharts.com/modules/dumbbell.js"></script>
     <script src="https://code.highcharts.com/modules/lollipop.js"></script>
+    <script src="plotHelper.js"></script>
     <script src="plot.js"></script>
   </body>
 </html>

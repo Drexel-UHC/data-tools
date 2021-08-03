@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>Dropdown</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <button class="click">Click Me</button>
+
+      <div class="list">
+        <button class="links">Link 1</button>
+
+        <button class="links">Link 2</button>
+
+        <button class="links">Link 3</button>
+
+        <button class="links">Link 4</button>
+
+        <button class="links">Link 5</button>
+      </div>
+    </div>
+
+    <script>
+      let click = document.querySelector('.click');
+
+      let list = document.querySelector('.list');
+
+      click.addEventListener('click', () => {
+        list.classList.toggle('newlist');
+      });
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        background-image: url('https://www.cdgroupcredentialing.com/wp-content/uploads/2019/07/logo-background-shapes-png-5.png');
+
+        background-size: cover;
+      }
+
+      .container {
+        width: 200px;
+
+        position: relative;
+      }
+
+      .click {
+        background-color: #f85f73;
+      }
+
+      .click:hover {
+        background-color: #b71c1c;
+      }
+
+      .click,
+      .links {
+        padding: 12px;
+
+        font-size: 1.2em;
+
+        font-family: futura Md BT;
+
+        border: none;
+
+        outline: none;
+
+        width: 200px;
+
+        color: #fff;
+
+        transition: 0.3s;
+      }
+
+      .list {
+        position: absolute;
+
+        transform: scaleY(0);
+
+        transform-origin: top;
+
+        transition: 0.3s;
+      }
+
+      .newlist {
+        transform: scaleY(1);
+      }
+
+      .links {
+        background-color: #283c63;
+      }
+
+      .links:hover {
+        background-color: #01579b;
+
+        transform: scale(1.1);
+      }
+    </style>
+  </body>
+</html>

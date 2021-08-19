@@ -38,7 +38,6 @@
 .nav .links {
   background-color: var(--uhcBlue);
   color: white;
-
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -69,9 +68,58 @@
 .nav .links .pageNotSelected:hover {
   color: var(--uhcYellow);
 }
+
+/* Nav - Dropdown Menu Button */
+.navMenuContainer {
+  display: grid;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.menu {
+  background-color: var(--uhcBlue);
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto auto;
+  border: none;
+  transition: 200ms;
+  padding: 10px;
+}
+.menu .text {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+}
+
+.navChevronUHC {
+  justify-self: end;
+  display: grid;
+  align-content: center;
+  color: var(--uhcBlue);
+  background-color: var(--uhcYellow);
+  height: 100%;
+  width: 30px;
+}
+
+.nav .menu:hover {
+  box-shadow: 0px 2px 18px 0px var(--uhcLightBlue);
+}
+
+/* This styles when screen is below  */
+@media only screen and (max-width: 768px) {
+  .nav .links {
+    display: none;
+  }
+  .nav .menu {
+    display: grid;
+  }
+}
+
 /* Nav - Dropdown */
 .nav .dropdown {
-  background-color: var(--darkmatter);
+  background-color: var(--uhcBlue);
   display: none;
   text-align: center;
 }
@@ -82,25 +130,4 @@
 .nav .dropdown a:hover {
   color: var(--greyapple);
   background-color: var(--uhcYellow);
-}
-
-.nav .menu {
-  -webkit-user-select: none;
-  cursor: pointer;
-  display: none;
-  justify-self: right;
-  margin-right: 15px;
-  user-select: none;
-}
-.nav .menu:hover {
-  opacity: 0.5;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav .content .links {
-    display: none;
-  }
-  .nav .content .menu {
-    display: initial;
-  }
 }

@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/semantic.form.min.css" />
+    <link rel="stylesheet" href="css/semantic.button.min.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/gallery.css" />
@@ -346,12 +348,7 @@
 
         <img src="img/gallery/gallery_shiny_LE_Income_ineq_cities.PNG" alt="" />
         <div class="toolGalleryOutputs">
-          <a
-            href="https://drexel-uhc.shinyapps.io/LE_Income_Inequalities_City_dev/"
-            target="_blank"
-            class="outputsItem"
-            >Use Tool</a
-          >
+          <button id="btnToolsValidate_LE_income_ineq">Use Tool</button>
         </div>
       </div>
       <!--  Item: ESIR WebMap -->
@@ -419,6 +416,19 @@
             >View Report</a
           >
         </div>
+      </div>
+    </div>
+    <!-- Modal content -->
+    <div id="modalToolsValidate_LE_income_ineq" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="ui form" id="form">
+          <div class="field">
+            <label>Developmental Password</label>
+            <input id="passwordUHC" type="text" placeholder="Enter Password" />
+          </div>
+          <button class="ui button" type="submit" value="Submit">Submit</button>
+        </form>
       </div>
     </div>
     <!-- Footer -->

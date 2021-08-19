@@ -78,7 +78,7 @@
 .menu {
   background-color: var(--uhcBlue);
   cursor: pointer;
-  display: grid;
+  display: none;
   grid-template-columns: auto auto;
   border: none;
   transition: 200ms;

@@ -10,6 +10,8 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-items: center;
+  padding: 10px;
+  padding-bottom: 0px;
 }
 .logo_row .logo {
   background-color: white;

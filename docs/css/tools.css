@@ -240,27 +240,35 @@
   padding: 10px;
   display: grid;
   grid-gap: 10px;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 200px auto auto auto;
   justify-items: center;
   grid-template-areas:
     'img'
     'title'
+    'date'
     'desc'
     'output';
   transition: 0.5s;
-}
-
-.toolGalleryItem img {
-  padding-top: 10px;
-  height: 200px;
-  grid-area: img;
-  /* border: black solid 1px; */
 }
 
 .toolGalleryItem:hover {
   /* border: var(--uhcLightBlue) solid 1px; */
   transform: translate(0, -15px);
   box-shadow: 0px 4px 5px var(--uhcLightBlue);
+}
+
+.toolGalleryItem .date {
+  grid-area: date;
+  text-align: center;
+  font-size: 12px;
+}
+
+.toolGalleryItem img {
+  padding-top: 10px;
+  height: 200px;
+  grid-area: img;
+  border: var(--uhcGray) solid 2px;
 }
 
 .toolGalleryItem .title {

@@ -45,34 +45,46 @@ filterItems.forEach(function (filterItem) {
 // Validation Modal for outsourcing
 var modal = document.getElementById('modalToolsValidate_LE_income_ineq');
 var btn = document.getElementById('btnToolsValidate_LE_income_ineq');
+btnToolsValidate_BCHC_policy_tool;
+var btn2 = document.getElementById('btnToolsValidate_BCHC_policy_tool');
 var span = document.getElementsByClassName('close')[0];
 btn.onclick = function () {
   modal.style.display = 'block';
   var form = document.getElementById('form');
   var passwordUHC = document.getElementById('passwordUHC');
   console.log(form, passwordUHC);
+  modal.setAttribute(
+    'data-url',
+    'https://drexel-uhc.shinyapps.io/LE_Income_Inequalities_City_dev/'
+  );
+  form.addEventListener('submit', formSubmit);
+};
+btn2.onclick = function () {
+  modal.style.display = 'block';
+  var form = document.getElementById('form');
+  var passwordUHC = document.getElementById('passwordUHC');
+  console.log(form, passwordUHC);
+  modal.setAttribute(
+    'data-url',
+    'https://drexel-uhc.github.io/bchc_policy_lit_review/'
+  );
   form.addEventListener('submit', formSubmit);
 };
 span.onclick = function () {
+  modal.removeAttribute('data-url');
   modal.style.display = 'none';
 };
 window.onclick = function (event) {
   if (event.target == modal) {
+    modal.removeAttribute('data-url');
     modal.style.display = 'none';
   }
 };
 
 // Form Validation
 function formSubmit(event) {
-  console.log(`Submit clicked;  ${passwordUHC.value}`);
   if (passwordUHC.value === 'uhc') {
-    console.log(`Correct`);
-    modal.style.display = 'none';
-    window.open(
-      'https://drexel-uhc.shinyapps.io/LE_Income_Inequalities_City_dev/'
-    );
-  } else {
-    console.log(`INCORRECT`);
-  }
+    window.open(modal.getAttribute('data-url'));
+  } 
   event.preventDefault();
 }

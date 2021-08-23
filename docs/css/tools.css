@@ -324,7 +324,7 @@
 }
 
 /* Validation */
-#btnToolsValidate_LE_income_ineq {
+.btnToolsValidate {
   background-color: white;
   border: none;
   font-size: 13px;
@@ -339,7 +339,7 @@
   transition: 0.2s;
 }
 
-#btnToolsValidate_LE_income_ineq:hover {
+.btnToolsValidate:hover {
   font-size: 14px;
 }
 

@@ -4,6 +4,20 @@
   display: grid;
   grid-template-rows: 2fr 1fr;
 }
+.site-banner {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffcc00; /* Bright yellow for visibility, feel free to choose a different color */
+  color: #000; /* Black text color */
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2); /* Optional: adds a slight shadow for depth */
+  position: relative; /* Positions the banner at the top of the nav */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures the banner is above other content */
+}
 
 /* Nav - Logo */
 .logo_row {

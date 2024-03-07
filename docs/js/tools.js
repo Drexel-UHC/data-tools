@@ -66,7 +66,7 @@ btn2.onclick = function () {
   console.log(form, passwordUHC);
   modal.setAttribute(
     'data-url',
-    'https://drexel-uhc.github.io/bchc_policy_lit_review/'
+    'https://bchc-policy-analysis-prototype.netlify.app/'
   );
   form.addEventListener('submit', formSubmit);
 };

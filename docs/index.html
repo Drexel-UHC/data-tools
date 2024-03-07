@@ -73,12 +73,10 @@
     <div class="filterTechTitle">Technology Type</div>
     <div class="filterTech">
       <!-- <div class="techItem" data-name="arcgis">ESRI</div> -->
-      <div class="techItem" data-name="shiny">Shiny (6)</div>
-      <div class="techItem" data-name="javascript">Javascript (5)</div>
-      <div class="techItem" data-name="tableau">Tableau (1)</div>
-      <div class="techItem" data-name="esriStoryMap">ESRI StoryMap (1)</div>
-      <div class="techItem" data-name="esriWebMap">ESRI WebMap (1)</div>
-      <div class="techItem" data-name="esriWebApp">ESRI WebApp</div>
+      <div class="techItem" data-name="shiny">Shiny</div>
+      <div class="techItem" data-name="javascript">Javascript</div>
+      <div class="techItem" data-name="tableau">Tableau</div>
+      <div class="techItem" data-name="esri">ESRI</div>  
     </div>
     <div class="filterCatTitle">Category</div>
     <div class="filterCat">
@@ -90,21 +88,98 @@
   </div>
   <!-- Gallery -->
   <div class="toolGallery">
-      <!--  2023-05: Philadelphia Neighborhoods for Public Health Research -->
-      <div class="toolGalleryItem " data-name="uhc esriStoryMap">
-        <div class="title">Philadelphia Neighborhoods for Public Health Research</div>
-        <div class="date">May 2023</div>
-        <div class="desc">
-          An overview of Philadelphia neighborhoods used by UHC and others for public health research as a StoryMap
-        </div>
-        <img src="img/gallery/PHLNbhds.PNG" alt="" />
-        <div class="toolGalleryOutputs">
-          <a href="https://storymaps.arcgis.com/stories/07e53edecf2d423ab7231586eefebb7b"
-            target="_blank" class="outputsItem">Web application</a>
-        </div>
+    <!--  2023-09: SALURBAL Cities Web Application -->
+    <div class="toolGalleryItem " data-name="uhc esri">
+      <div class="title">Philadelphia Neighborhoods for Public Health Research</div>
+      <div class="date">Sep 2023</div>
+      <div class="desc">
+        This web app allows users to interactively explore SALURBAL L1ADs and L2s. It can be embedded in other applications.
       </div>
-      <!--  2021-01: BCHC Covid -->
-      <div class="toolGalleryItem" data-name="uhc shiny">
+      <img src="img/gallery/esri-salurbal-sep-2024.png" alt="" />
+      <div class="toolGalleryOutputs">
+        <a href="https://drx.maps.arcgis.com/apps/instant/basic/index.html?appid=025fb2ad97394ac492c8ce6ddc1f0df1" target="_blank"
+          class="outputsItem">View App</a>
+      </div>
+    </div>
+    <!--  2023-05: Philadelphia Neighborhoods for Public Health Research -->
+    <div class="toolGalleryItem " data-name="uhc esri">
+      <div class="title">Philadelphia Neighborhoods for Public Health Research</div>
+      <div class="date">May 2023</div>
+      <div class="desc">
+        An overview of Philadelphia neighborhoods used by UHC and others for public health research as a StoryMap
+      </div>
+      <img src="img/gallery/PHLNbhds.PNG" alt="" />
+      <div class="toolGalleryOutputs">
+        <a href="https://storymaps.arcgis.com/stories/07e53edecf2d423ab7231586eefebb7b" target="_blank"
+          class="outputsItem">Web application</a>
+      </div>
+    </div>
+    <!--  2022-11: LE_Income ineq cities Covid -->
+    <div class="toolGalleryItem date---" data-name="uhc manuscript shiny"
+      data-url="https://drexel-uhc.shinyapps.io/LE_Income_Inequalities_City_dev/">
+      <div class="title">
+        Heterogeneity in Disparities in Life Expectancy across US Metropolitan
+        Areas
+      </div>
+      <div class="desc">
+        This article highlights key disparities in life expectancy in US MSAs.
+        This app does two things: 1) translates the article figures into
+        interactive visualizations, allowing more granular exploration of the
+        article analysis, and 2) extends scope of the data visualized to
+        include all US MSAs.
+      </div>
+      <div class="date"><i>Nov, 2022</i></div>
+      <img src="img/gallery/gallery_shiny_LE_Income_ineq_cities.PNG" alt="" />
+      <div class="toolGalleryOutputs">
+        <button id="btnToolsValidate_LE_income_ineq" class="btnToolsValidate">
+          Use Tool
+        </button>
+      </div>
+    </div>
+     <!--  2021-11:  Big Cities Health Inventory (BCHI)   -->
+     <div class="toolGalleryItem " data-name="bchc website">
+      <div class="title">Big Cities Health Inventory</div>
+      <div class="desc">
+        The Big Cities Health Inventory (BCHI) is the Big Cities Health Coalition’s open-access data platform. Today, more than 80% of the U.S. population live in metropolitan areas. There is a clear need for city-level data to understand and inform a city’s health and ensure that programs are equitable and responsive to a city’s health needs. The BCHI provides a baseline of health in urban communities, and time trends can be used to explore patterns in the data that may point to the effectiveness of policies and practices at work in Big Cities Health Coalition’s member jurisdictions.     
+       </div>
+      <div class="date"><i>Nov 2021</i></div>
+      <img src="img/gallery/bchc-snip.png" alt="" />
+      <div class="toolGalleryOutputs">
+        <a href="https://bigcitieshealthdata.org/"
+          class="outputsItem" target="_blank">Use App</a>
+      </div>
+    </div>
+     <!--  2021-06: City-level impact of extreme temperatures and mortality in Latin America  -->
+     <div class="toolGalleryItem " data-name="salurbal shiny">
+      <div class="title">City-level impact of extreme temperatures and mortality in Latin America</div>
+      <div class="desc">
+        This app translates figures and results from Kephart et al. (2022, Nature Medicine) into interactive visualizations, allowing more granular exploration of the article analysis.
+      </div>
+      <div class="date"><i>June 2021</i></div>
+      <img src="img/gallery/heat-shiny-snip.png" alt="" />
+      <div class="toolGalleryOutputs">
+        <a href="https://drexel-uhc.shinyapps.io/MS85/"
+          class="outputsItem" target="_blank">Use App</a>
+      </div>
+    </div>
+    <!--  2021-06: Interactive Blogs  -->
+    <div class="toolGalleryItem " data-name="uhc javascript">
+      <div class="title">Interactive Visualizations in Blogs</div>
+      <div class="desc">
+        Javascript based interactive vizualizations can be included in basic
+        HTML pages. This blog shows JS viz from the BCHC COVID-19 Dashboard in
+        a blog post.
+      </div>
+      <div class="date"><i>June 2021</i></div>
+
+      <img src="img/gallery/gallery_js_blog_bchc_covid.PNG" alt="" />
+      <div class="toolGalleryOutputs">
+        <a href="https://www.covid-inequities.info/blog/2021/06/30/2021-06-30-tracking-covid-19-vaccination-inequities-in-us-cities/"
+          class="outputsItem" target="_blank">View Post</a>
+      </div>
+    </div>
+    <!--  2021-01: BCHC Covid -->
+    <div class="toolGalleryItem" data-name="uhc shiny">
       <div class="title">COVID-19 Health Inequities in Cities</div>
       <div class="desc">
         Compare, and track inequities along three dimensions (1) across
@@ -118,62 +193,6 @@
         <a href="https://www.covid-inequities.info/" target="_blank" class="outputsItem">Website</a>
         <a href="https://drexel-uhc.shinyapps.io/bchc_covid19/" target="_blank" class="outputsItem">Use Tool</a>
         <a href="https://github.com/Drexel-UHC/covid_inequities_project" target="_blank" class="outputsItem">Data</a>
-      </div>
-    </div>
-    <!--  2020-05: SALURBAL COVID -->
-    <div class="toolGalleryItem" data-name="salurbal manuscript shiny">
-      <div class="title">SALURBAL COVID-19 Dashboard</div>
-      <div class="date"><i>May 2020</i></div>
-
-      <div class="desc">
-        The online dashboard developed by the SALURBAL project allows visitors
-        to plot trends of COVID-19 cases and deaths as well as to map these
-        outcomes at various geographic levels: country, city, and sub-city in
-        Latin American countries and compare the progress of the pandemic
-        across countries.
-      </div>
-      <img src="img/gallery/gallery_shiny_salurbal_covid.PNG" alt="" />
-      <div class="toolGalleryOutputs">
-        <a href="https://drexel-uhc.shinyapps.io/salurbal_covid19/" target="_blank" class="outputsItem">Use Tool</a>
-      </div>
-    </div>
-    <!--  2020-07: tablaue covid vuln -->
-    <div class="toolGalleryItem " data-name="uhc tableau">
-      <div class="title">
-        COVID-19 Vulnerability Indicators in Philadelphia
-      </div>
-      <div class="desc">
-        In response to the COVID-19 pandemic, the Drexel West Philly Promise
-        Neighborhood team has built data dashboards to help to identify areas
-        in Philadelphia that are at highest risk for COVID-19 and its
-        longer-term impacts.
-      </div>
-      <div class="date"><i>July 2020</i></div>
-      <img src="img/gallery/gallery_tableau_covid_vuln.PNG" alt="" />
-      <div class="toolGalleryOutputs">
-        <a href="https://drexel.edu/uhc/resources/coronavirus/vulnerability-indicators/" target="_blank"
-          class="outputsItem">Website</a>
-        <a href="pages/pages_covid_vulnerability.html" class="outputsItem">Use Tool</a>
-      </div>
-    </div>
-    <!--  2020-09: State of Cancer -->
-    <div class="toolGalleryItem date---" data-name="uhc shiny">
-      <div class="title">THE STATE OF CANCER IN PHILADELPHIA</div>
-      <div class="desc">
-        The goal of this report is to identify and characterize disparities in
-        cancer incidence and mortality, uses of cancer screening, and select
-        cancer risk factors in Philadelphia between 2000-2018. The ultimate
-        purpose is to use this information to motivate and support programs
-        and policies aimed at reducing cancer risks and disparities.
-      </div>
-      <div class="date"><i>Sep 2020</i></div>
-      <img src="img/gallery/gallery_shiny_state_of_cancer.PNG" alt="" />
-      <div class="toolGalleryOutputs">
-        <a href="https://drexel.edu/uhc/research/projects/community-impact-reducing-cancer/Basic%20Page/"
-          target="_blank" class="outputsItem">Website</a>
-        <a href="https://drexel-uhc.shinyapps.io/state_of_cancer_in_philadelphia" target="_blank"
-          class="outputsItem">Use
-          Tool</a>
       </div>
     </div>
     <!--  2021-01: State of Cancer -->
@@ -197,36 +216,6 @@
           class="outputsItem">Use Tool</a>
       </div>
     </div>
-    <!--  2021-06: Interactive Blogs  -->
-    <div class="toolGalleryItem " data-name="uhc javascript">
-      <div class="title">Interactive Visualizations in Blogs</div>
-      <div class="desc">
-        Javascript based interactive vizualizations can be included in basic
-        HTML pages. This blog shows JS viz from the BCHC COVID-19 Dashboard in
-        a blog post.
-      </div>
-      <div class="date"><i>June 2021</i></div>
-
-      <img src="img/gallery/gallery_js_blog_bchc_covid.PNG" alt="" />
-      <div class="toolGalleryOutputs">
-        <a href="https://www.covid-inequities.info/blog/2021/06/30/2021-06-30-tracking-covid-19-vaccination-inequities-in-us-cities/"
-          class="outputsItem" target="_blank">View Post</a>
-      </div>
-    </div>
-    <!--  9999-99: JS App1 (BCHC COVID INEQ Card)  -->
-    <div class="toolGalleryItem date-unreleased" data-name="uhc javascript unreleased">
-      <div class="title">BCHC COVID Inequities Card</div>
-      <div class="desc">
-        A example of serverless JS Applications. These don't require a server
-        to run (cheap) and are easily deployable in many technology stacks
-        (adaptable).
-      </div>
-      <div class="date"><i>June 2021</i></div>
-      <img src="img/gallery/gallery_js_bchc_covid_ineq_card.PNG" alt="" />
-      <div class="toolGalleryOutputs">
-        <a href="pages/app_bchc_covid_ineq/app_bchc_covid_ineq.html" class="outputsItem">View App</a>
-      </div>
-    </div>
     <!--  2021-01: MS10  Life Expectancy and Mortality Profiles in Latin American Cities -->
     <div class="toolGalleryItem date---" data-name="salurbal manuscript shiny">
       <div class="title">
@@ -246,30 +235,8 @@
         <a href="https://github.com/usamabilal/SALURBAL_MS10" target="_blank" class="outputsItem">Source Code</a>
       </div>
     </div>
-    <!--  2022-11: LE_Income ineq cities Covid -->
-    <div class="toolGalleryItem date---" data-name="uhc manuscript shiny"
-      data-url="https://drexel-uhc.shinyapps.io/LE_Income_Inequalities_City_dev/">
-      <div class="title">
-        Heterogeneity in Disparities in Life Expectancy across US Metropolitan
-        Areas
-      </div> 
-      <div class="desc">
-        This article highlights key disparities in life expectancy in US MSAs.
-        This app does two things: 1) translates the article figures into
-        interactive visualizations, allowing more granular exploration of the
-        article analysis, and 2) extends scope of the data visualized to
-        include all US MSAs.
-      </div>
-      <div class="date"><i>Nov, 2022</i></div>
-      <img src="img/gallery/gallery_shiny_LE_Income_ineq_cities.PNG" alt="" />
-      <div class="toolGalleryOutputs">
-        <button id="btnToolsValidate_LE_income_ineq" class="btnToolsValidate">
-          Use Tool
-        </button>
-      </div>
-    </div>
     <!--  2021-01: ESIR WebMap -->
-    <div class="toolGalleryItem date---" data-name="salurbal internalTools esriWebMap">
+    <div class="toolGalleryItem date---" data-name="salurbal internalTools esri">
       <div class="title">Life Latin_America_Urban_Areas_1_29_20 </div>
       <div class="desc">
         Latin America Urban Areas included in the SALURBAL study
@@ -281,38 +248,60 @@
         <a href="https://arcg.is/0aeyP0" target="_blank" class="outputsItem">View Map</a>
       </div>
     </div>
-    
-    <!--  9999-99: LE_Income ineq cities Covid -->
-    <div class="toolGalleryItem date---unreleased" data-name="uhc javascript unreleased">
-      <div class="title">BCHC Policy Analysis Tool</div>
+    <!--  2020-09: State of Cancer -->
+    <div class="toolGalleryItem date---" data-name="uhc shiny">
+      <div class="title">THE STATE OF CANCER IN PHILADELPHIA</div>
       <div class="desc">
-        This goal of this app is to provide an accessible tool to examine how
-        policy effects health outcomes. This is still being developed and
-        currently is only displaying simulated data.
+        The goal of this report is to identify and characterize disparities in
+        cancer incidence and mortality, uses of cancer screening, and select
+        cancer risk factors in Philadelphia between 2000-2018. The ultimate
+        purpose is to use this information to motivate and support programs
+        and policies aimed at reducing cancer risks and disparities.
       </div>
-      <div class="date"><i>Unreleased</i></div>
-
-      <img src="img/gallery/gallery_js_bchc_policy_tool.PNG" alt="" />
+      <div class="date"><i>Sep 2020</i></div>
+      <img src="img/gallery/gallery_shiny_state_of_cancer.PNG" alt="" />
       <div class="toolGalleryOutputs">
-        <button id="btnToolsValidate_BCHC_policy_tool" class="btnToolsValidate">
-          Use Tool
-        </button>
+        <a href="https://drexel.edu/uhc/research/projects/community-impact-reducing-cancer/Basic%20Page/"
+          target="_blank" class="outputsItem">Website</a>
+        <a href="https://drexel-uhc.shinyapps.io/state_of_cancer_in_philadelphia" target="_blank"
+          class="outputsItem">Use
+          Tool</a>
       </div>
     </div>
-
-    <!--  2019-12: SALURBAL/UniAndes Urban design  -->
-    <div class="toolGalleryItem date---2019-12" data-name="salurbal manuscript javascript">
-      <div class="title">Urban Landscape and Street Design Profiles</div>
-      <div class="desc">
-        This tool examines how to quantify the contributions of city-level
-        Built Environment (BE) factors to differences in levels of health and
-        health inequalities within and between cities.
+    <!--  2020-07: tablaue covid vuln -->
+    <div class="toolGalleryItem " data-name="uhc tableau">
+      <div class="title">
+        COVID-19 Vulnerability Indicators in Philadelphia
       </div>
-      <div class="date"><i>Dec 2019</i></div>
-      <img src="img/gallery/gallery_js_salurbal_urban_profiles.PNG" alt="" />
+      <div class="desc">
+        In response to the COVID-19 pandemic, the Drexel West Philly Promise
+        Neighborhood team has built data dashboards to help to identify areas
+        in Philadelphia that are at highest risk for COVID-19 and its
+        longer-term impacts.
+      </div>
+      <div class="date"><i>July 2020</i></div>
+      <img src="img/gallery/gallery_tableau_covid_vuln.PNG" alt="" />
       <div class="toolGalleryOutputs">
-        <a href="https://fabiancpl.github.io/salurbal/" class="outputsItem" target="_blank">Use Tool</a>
-        <a href="https://github.com/fabiancpl/salurbal" class="outputsItem" target="_blank">Source Code</a>
+        <a href="https://drexel.edu/uhc/resources/coronavirus/vulnerability-indicators/" target="_blank"
+          class="outputsItem">Website</a>
+        <a href="pages/pages_covid_vulnerability.html" class="outputsItem">Use Tool</a>
+      </div>
+    </div>
+    <!--  2020-05: SALURBAL COVID -->
+    <div class="toolGalleryItem" data-name="salurbal manuscript shiny">
+      <div class="title">SALURBAL COVID-19 Dashboard</div>
+      <div class="date"><i>May 2020</i></div>
+
+      <div class="desc">
+        The online dashboard developed by the SALURBAL project allows visitors
+        to plot trends of COVID-19 cases and deaths as well as to map these
+        outcomes at various geographic levels: country, city, and sub-city in
+        Latin American countries and compare the progress of the pandemic
+        across countries.
+      </div>
+      <img src="img/gallery/gallery_shiny_salurbal_covid.PNG" alt="" />
+      <div class="toolGalleryOutputs">
+        <a href="https://drexel-uhc.shinyapps.io/salurbal_covid19/" target="_blank" class="outputsItem">Use Tool</a>
       </div>
     </div>
     <!--  2020-04: Internal GDP Check JS -->
@@ -332,7 +321,8 @@
     </div>
     <!--  2020-02: BCHC Covid -->
     <div class="toolGalleryItem date---2020-02" data-name="uhc shiny">
-      <div class="title">Health and Health-Related Resources in Newly Designated Federally Qualified Opportunity Zones: United States, 2012–2016</div>
+      <div class="title">Health and Health-Related Resources in Newly Designated Federally Qualified Opportunity Zones:
+        United States, 2012–2016</div>
       <div class="desc">
         Interactive feature for a paper.
       </div>
@@ -340,6 +330,76 @@
       <img src="img/gallery/FQOZ_Benchmark.png" alt="" />
       <div class="toolGalleryOutputs">
         <a href="https://neighborhooddata.shinyapps.io/FQOZ_Benchmark/" target="_blank" class="outputsItem">Use Tool</a>
+      </div>
+    </div>
+    <!--  2019-12: SALURBAL/UniAndes Urban design  -->
+    <div class="toolGalleryItem date---2019-12" data-name="salurbal manuscript javascript">
+      <div class="title">Urban Landscape and Street Design Profiles</div>
+      <div class="desc">
+        This tool examines how to quantify the contributions of city-level
+        Built Environment (BE) factors to differences in levels of health and
+        health inequalities within and between cities.
+      </div>
+      <div class="date"><i>Dec 2019</i></div>
+      <img src="img/gallery/gallery_js_salurbal_urban_profiles.PNG" alt="" />
+      <div class="toolGalleryOutputs">
+        <a href="https://fabiancpl.github.io/salurbal/" class="outputsItem" target="_blank">Use Tool</a>
+        <a href="https://github.com/fabiancpl/salurbal" class="outputsItem" target="_blank">Source Code</a>
+      </div>
+    </div>
+   <!--  9999-99: Neighborhood Built Environment Features in Bogotá  -->
+   <div class="toolGalleryItem date-unreleased" data-name="uhc javascript unreleased">
+    <div class="title">Neighborhood Built Environment Features in Bogotá</div>
+    <div class="desc">
+      As part of the BEPIDL study, this data tool provides histogram and spatial distribution of the neighborhood-level indicators for the built environment in Bogotá, Colombia.
+    </div>
+    <div class="date"><i>Internal - Unreleased</i></div>
+    <img src="img/gallery/bepidl-shiny.png" alt="" />
+    <div class="toolGalleryOutputs">
+      <a href="https://heli-xu.shinyapps.io/zat-indicator/" class="outputsItem">View App</a>
+    </div>
+  </div>    
+     <!--  9999-99: Progress notes in Built Environment, Pedestrian Injuries and Deep Learning Study  -->
+     <div class="toolGalleryItem date-unreleased" data-name="uhc javascript unreleased">
+      <div class="title">Progress in Built Environment, Pedestrian Injuries and Deep Learning Study</div>
+      <div class="desc">
+        Blog posts on data cleaning, visualization and analyses/modeling from the Built Environment, Pedestrian Injuries and Deep Learning Study. (Work in progress, aiming to make it more story-oriented.)      </div>
+      <div class="date"><i>Internal - Unreleased</i></div>
+      <img src="img/gallery/bepidl-blog.png" alt="" />
+      <div class="toolGalleryOutputs">
+        <a href="https://heli-xu.github.io/BEPIDL/" class="outputsItem">View Blog</a>
+      </div>
+    </div>    
+  <!--  9999-99: JS App1 (BCHC COVID INEQ Card)  -->
+    <div class="toolGalleryItem date-unreleased" data-name="uhc javascript unreleased">
+      <div class="title">BCHC COVID Inequities Card</div>
+      <div class="desc">
+        A example of serverless JS Applications. These don't require a server
+        to run (cheap) and are easily deployable in many technology stacks
+        (adaptable).
+      </div>
+      <div class="date"><i>June 2021</i></div>
+      <img src="img/gallery/gallery_js_bchc_covid_ineq_card.PNG" alt="" />
+      <div class="toolGalleryOutputs">
+        <a href="pages/app_bchc_covid_ineq/app_bchc_covid_ineq.html" class="outputsItem">View App</a>
+      </div>
+    </div>
+    
+    <!--  9999-99: LE_Income ineq cities Covid -->
+    <div class="toolGalleryItem date---unreleased" data-name="uhc javascript unreleased">
+      <div class="title">BCHC Policy Analysis Tool</div>
+      <div class="desc">
+        This goal of this app is to provide an accessible tool to examine how
+        policy effects health outcomes. This is still being developed and
+        currently is only displaying simulated data.
+      </div>
+      <div class="date"><i>Unreleased</i></div>
+
+      <img src="img/gallery/gallery_js_bchc_policy_tool.PNG" alt="" />
+      <div class="toolGalleryOutputs">
+        <button id="btnToolsValidate_BCHC_policy_tool" class="btnToolsValidate">
+          Use Tool
+        </button>
       </div>
     </div>
   </div>
